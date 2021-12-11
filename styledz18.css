@@ -1,0 +1,37 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-red {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+.block-blue {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  margin-left: 100px;
+  animation-name: heartBeat;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-180deg);
+  }
+}
